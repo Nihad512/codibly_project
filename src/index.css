@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+}
+#root{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+html,body{
+    width: 100%;
+   float: left;
+}
+html{
+    scroll-behavior: smooth;
+}
+a,span{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+ul li,
+ol li{
+	list-style-type: none;
+	position: relative;
+	float: left;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input,
+button,
+select{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+    
+}
+input{
+    width: 60%;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+button{
+    cursor: pointer;
+}
+.flex{
+	display: flex;
+}
+
+.direction_column{
+	flex-direction: column;
+}
+
+.direction_row{
+	flex-direction: row;
+}
+
+.flex_wrap{
+	flex-wrap: wrap;
+}
+.justify_between{
+	justify-content: space-between;
+}
+.justify_center{
+	justify-content: center;
+}
+.full_width{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.full_height{
+    height: 100%;
+}
+.clearfix{
+	clear: both;
+}
+.center{
+    position: relative;
+    margin: 0 auto;
+    float: none;
+}
+.align_center{
+	align-items: center;
+	
+}
+.text_align{
+	text-align: center;
+}
+.inline{
+    display: inline-block;
+}
+.product{
+    width: 100%;
+    height: 352px;
+    border-radius: 5px;
+    float: left;
+    padding: 20px;
+}
+.product span:first-child{
+    margin-bottom: 20px;
+}
+button:first-of-type{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-left: 20px;
+
+}
+button{
+    width: 106px;
+    height: 40px;
+    background-color: #90ee90;
+    color: white;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.ButtonContainer{
+    position: relative;
+    top: 117%;
+    display: flex;
+    width: 100%;
 }
